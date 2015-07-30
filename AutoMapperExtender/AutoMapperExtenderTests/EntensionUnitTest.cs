@@ -23,7 +23,7 @@ namespace AutoMapperExtenderTests
 
         [TestMethod]
         public void TestMapFromProperty()
-        { 
+        {  
             AutoMapperConfig.ConfigureMapFromProperty();
             var b = new B
             {
@@ -36,6 +36,7 @@ namespace AutoMapperExtenderTests
             };
 
             var a = Mapper.Map<A>(b);
+            var temp = a;
         }
     }
 }

@@ -21,7 +21,7 @@ namespace AutoMapperExtenderTests
         public static void ConfigureMapFromProperty()
         {
             Mapper.CreateMap<B, A>()
-                .MapFromProperty(src => src.PropA)
+                .FromSourceProperty(src => src.PropA)
                 .IgnoreExtraProperties();
 
             Mapper.AssertConfigurationIsValid();
